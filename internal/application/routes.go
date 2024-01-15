@@ -3,7 +3,7 @@ package application
 import (
 	"net/http"
 
-	"github.com/aymene01/order-api/handler"
+	"github.com/aymene01/order-api/internal/handler"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

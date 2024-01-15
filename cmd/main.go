@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/aymene01/order-api/application"
+	"github.com/aymene01/order-api/internal/application"
 )
 
 func main() {
