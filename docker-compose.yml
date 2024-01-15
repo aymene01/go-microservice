@@ -1,11 +1,12 @@
-version: '3'
+version: "3"
 
 services:
   order-api:
-    build: 
+    build:
       context: .
       dockerfile: ./docker/Dockerfile
     container_name: order-api
+    image: aymene01/order-api:latest
     ports:
       - "8080:8080"
     depends_on:
