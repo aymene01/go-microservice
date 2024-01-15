@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/go-chi/chi/v5 v5.0.11
+	github.com/google/uuid v1.5.0
 	github.com/redis/go-redis/v9 v9.4.0
 )
 
