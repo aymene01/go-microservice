@@ -1,9 +1,10 @@
 version: '3'
 
 services:
-
   order-api:
-    build: .
+    build: 
+      context: .
+      dockerfile: ./docker/Dockerfile
     container_name: order-api
     ports:
       - "8080:8080"
@@ -12,6 +13,7 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+    command: tail -f /dev/null
 
   redis:
     image: redis:latest
